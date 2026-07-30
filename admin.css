@@ -1,0 +1,210 @@
+/* ========================= */
+/* RESET */
+/* ========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* ========================= */
+/* BODY */
+/* ========================= */
+
+body{
+
+    background:#f7f5f2;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:20px;
+
+}
+
+/* ========================= */
+/* CONTAINER */
+/* ========================= */
+
+.container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+
+.card{
+
+    width:100%;
+
+    max-width:430px;
+
+    background:#ffffff;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+    text-align:center;
+
+}
+
+/* ========================= */
+/* JUDUL */
+/* ========================= */
+
+h1{
+
+    color:#8b6b3f;
+
+    margin-bottom:10px;
+
+    font-size:28px;
+
+}
+
+p{
+
+    color:#666;
+
+    margin-bottom:20px;
+
+    line-height:1.6;
+
+}
+
+/* ========================= */
+/* INPUT */
+/* ========================= */
+
+input{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    outline:none;
+
+    margin-bottom:15px;
+
+}
+
+input:focus{
+
+    border-color:#8b6b3f;
+
+}
+
+/* ========================= */
+/* BUTTON */
+/* ========================= */
+
+button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#8b6b3f;
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    margin-top:10px;
+
+}
+
+button:hover{
+
+    background:#70542f;
+
+    transform:translateY(-2px);
+
+}
+
+button:active{
+
+    transform:scale(.98);
+
+}
+
+/* ========================= */
+/* HASIL LINK */
+/* ========================= */
+
+#hasil{
+
+    margin-top:20px;
+
+    word-break:break-word;
+
+    color:#333;
+
+}
+
+#link{
+
+    margin-top:10px;
+
+    background:#f3f3f3;
+
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width:480px){
+
+    .card{
+
+        padding:22px;
+
+    }
+
+    h1{
+
+        font-size:24px;
+
+    }
+
+    button{
+
+        font-size:14px;
+
+    }
+
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Undangan Digital</title>
+
+<link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>💌 Admin Undangan</h1>
+
+        <p>Buat Link Nama Tamu</p>
+
+        <input
+        type="text"
+        id="nama"
+        placeholder="Contoh : Bapak Ahmad & Keluarga">
+
+        <button onclick="buatLink()">
+            ✨ Buat Link
+        </button>
+
+        <div id="hasil"></div>
+
+        <button
+        id="copyBtn"
+        onclick="copyLink()"
+        style="display:none;">
+            📋 Copy Link
+        </button>
+
+    </div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

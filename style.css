@@ -1,0 +1,619 @@
+/* =======================================================
+   RESET
+======================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#ffffff;
+
+    overflow-x:hidden;
+
+}
+
+
+
+/* =======================================================
+   COVER
+======================================================= */
+
+.cover{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(255,255,255,0.98);
+
+    z-index:9999;
+
+    transition:1s;
+
+}
+
+
+
+.cover.hide{
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:scale(1.08);
+
+}
+
+
+
+/* =======================================================
+   GAMBAR COVER
+======================================================= */
+
+.cover-img{
+
+    height:100vh;
+
+    width:auto;
+
+    max-width:100%;
+
+    object-fit:contain;
+
+    display:block;
+
+}
+
+
+
+/* =======================================================
+   NAMA TAMU
+======================================================= */
+
+#namaTamu{
+
+    position:absolute;
+
+    left:50%;
+
+    top:67%;
+
+    transform:translateX(-50%);
+
+    width:90%;
+
+    text-align:center;
+
+    color:#000;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+}
+
+
+
+/* =======================================================
+   TOMBOL BUKA UNDANGAN
+======================================================= */
+
+.tombol-buka{
+
+    position:absolute;
+
+    left:52%;
+
+    top:75%;
+
+    transform:translateX(-50%);
+
+    width:130px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#fff;
+
+    color:#8b6b3f;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.18);
+
+}
+/* =======================================================
+   ISI UNDANGAN
+======================================================= */
+
+#isiUndangan{
+
+    display:none;
+
+    width:100%;
+
+}
+
+
+
+/* =======================================================
+   SETIAP HALAMAN
+======================================================= */
+
+section{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:420px;
+
+    margin:auto;
+
+    opacity:0;
+
+    transform:translateY(90px) scale(.96);
+
+    transition:
+
+    opacity 1s ease,
+
+    transform 1s ease;
+
+}
+
+
+
+section.show{
+
+    opacity:1;
+
+    transform:translateY(0) scale(1);
+
+}
+
+
+
+/* =======================================================
+   GAMBAR HALAMAN
+======================================================= */
+
+section img{
+
+    width:100%;
+
+    display:block;
+
+    transform:scale(.98);
+
+    transition:transform 1s ease;
+
+}
+
+
+
+section.show img{
+
+    transform:scale(1);
+
+}
+/* =======================================================
+   HALAMAN LOKASI
+======================================================= */
+
+.halaman-lokasi{
+
+    position:relative;
+
+}
+
+
+
+.tombol-lokasi{
+
+    position:absolute;
+
+    top:62%;
+
+    left:45%;
+
+    transform:translate(-50%,-50%);
+
+
+    width:100px;
+
+    height:42px;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    text-decoration:none;
+
+    background:#ffffff;
+
+    color:#8b6b3f;
+
+
+    border-radius:30px;
+
+
+    font-size:14px;
+
+    font-weight:bold;
+
+
+    box-shadow:0 6px 18px rgba(0,0,0,.18);
+
+    transition:.35s;
+
+    animation:pulse 2.5s infinite;
+
+}
+
+
+
+.tombol-lokasi:hover{
+
+    transform:translate(-50%,-50%) scale(1.08);
+
+}
+
+
+
+
+
+/* =======================================================
+   HALAMAN KONFIRMASI
+======================================================= */
+
+.halaman-konfirmasi{
+
+    position:relative;
+
+}
+
+
+
+.overlay-konfirmasi{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+
+
+
+
+/* =======================================================
+   UCAPAN TERIMA KASIH
+======================================================= */
+
+.ucapan-terima-kasih{
+
+    position:absolute;
+
+    top:73%;
+
+    left:50%;
+
+
+    transform:translate(-50%,-50%);
+
+
+    width:82%;
+
+
+    text-align:center;
+
+
+    color:#6b4f2a;
+
+}
+
+
+
+.ucapan-terima-kasih h2{
+
+    font-size:30px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.ucapan-terima-kasih p{
+
+    font-size:14px;
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+/* =======================================================
+   GROUP TOMBOL KONFIRMASI
+======================================================= */
+
+.button-group{
+
+    position:absolute;
+
+    top:91%;
+
+    left:50%;
+
+
+    transform:translate(-50%,-50%);
+
+
+    width:82%;
+
+
+    display:flex;
+
+    justify-content:space-evenly;
+
+    align-items:center;
+
+}
+
+
+
+
+
+/* =======================================================
+   TOMBOL WHATSAPP
+======================================================= */
+
+.tombol-wa{
+
+    width:140px;
+
+    height:42px;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    text-decoration:none;
+
+
+    background:#ffffff;
+
+    color:#8b6b3f;
+
+
+    border-radius:30px;
+
+
+    font-size:13px;
+
+
+    font-weight:bold;
+
+
+    box-shadow:0 6px 18px rgba(0,0,0,.18);
+
+
+    transition:.35s;
+
+
+    animation:pulse 2.5s infinite;
+
+}
+
+
+
+.tombol-wa:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+
+
+
+/* =======================================================
+   TOMBOL HADIAH
+======================================================= */
+
+.tombol-hadiah{
+
+    width:140px;
+
+    height:42px;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    text-decoration:none;
+
+
+    background:#ffffff;
+
+    color:#8b6b3f;
+
+
+    border-radius:30px;
+
+
+    font-size:13px;
+
+
+    font-weight:bold;
+
+
+    box-shadow:0 6px-18px rgba(0,0,0,.18);
+
+
+    transition:.35s;
+
+
+    animation:pulse 2.5s infinite;
+
+}
+
+
+
+.tombol-hadiah:hover{
+
+    transform:scale(1.08);
+
+}
+/* =======================================================
+   ANIMASI
+======================================================= */
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+
+    50%{
+
+        transform:scale(1.06);
+
+    }
+
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+
+@keyframes musicRotate{
+
+    from{
+
+        rotate:0deg;
+
+    }
+
+
+    to{
+
+        rotate:360deg;
+
+    }
+
+}
+
+
+
+/* =======================================================
+   RESPONSIVE
+======================================================= */
+
+
+/* =====================
+   HP
+===================== */
+
+@media(max-width:768px){
+
+
+    .cover-img{
+
+        height:100vh;
+
+        width:auto;
+
+        max-width:100%;
+
+    }
+
+
+
+    section{
+
+        max-width:420px;
+
+    }
+
+
+}
+
+
+
+/* =====================
+   LAPTOP / DESKTOP
+===================== */
+
+@media(min-width:769px){
+
+
+    .cover-img{
+
+        height:100vh;
+
+        width:auto;
+
+        max-width:100%;
+
+    }
+
+
+
+    section{
+
+        max-width:420px;
+
+    }
+
+
+}

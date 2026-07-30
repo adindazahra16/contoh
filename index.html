@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Undangan Pernikahan</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ========================= -->
+<!-- COVER -->
+<!-- ========================= -->
+
+<div class="cover" id="cover">
+
+    <img src="assets/PERNIKAHAN.jpg" class="cover-img" alt="Cover">
+
+
+    <!-- NAMA TAMU -->
+    <h2 id="namaTamu">
+        Tamu Undangan
+    </h2>
+
+
+    <!-- TOMBOL BUKA -->
+    <button class="tombol-buka" onclick="bukaUndangan()">
+        Buka Undangan
+    </button>
+
+
+</div>
+
+
+<!-- ========================= -->
+<!-- MUSIK -->
+<!-- ========================= -->
+
+<audio id="musik" loop>
+
+    <source src="assets/bermuara.mp3.mp3" type="audio/mpeg">
+
+</audio>
+
+<!-- ========================= -->
+<!-- ISI UNDANGAN -->
+<!-- ========================= -->
+
+<div id="isiUndangan">
+
+<!-- ========================= -->
+<!-- HALAMAN 1 -->
+<!-- ========================= -->
+
+<section>
+
+    <div class="section-content">
+
+        <img src="assets/PERNIKAHAN (1).jpg" alt="Halaman 1">
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- HALAMAN 2 -->
+<!-- ========================= -->
+
+<section>
+
+    <div class="section-content">
+
+        <img src="assets/PERNIKAHAN (2).jpg" alt="Halaman 2">
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- HALAMAN 3 -->
+<!-- ========================= -->
+
+<section>
+
+    <div class="section-content">
+
+        <img src="assets/PERNIKAHAN (3).jpg" alt="Halaman 3">
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- HALAMAN 4 -->
+<!-- ========================= -->
+
+<section>
+
+    <div class="section-content">
+
+        <img src="assets/PERNIKAHAN (4).jpg" alt="Halaman 4">
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- HALAMAN 5 (LOKASI) -->
+<!-- ========================= -->
+
+<section class="halaman-lokasi">
+
+    <div class="section-content">
+
+        <img src="assets/PERNIKAHAN (5).jpg" alt="Lokasi">
+
+        <a
+            href="https://maps.app.goo.gl/hTFH8iQLzmw7BTC36?g_st=aw"
+            target="_blank"
+            class="tombol-lokasi">
+
+            📍 Lokasi
+
+        </a>
+
+    </div>
+
+</section>
+<!-- ========================= -->
+<!-- HALAMAN 6 -->
+<!-- ========================= -->
+
+<section>
+
+    <div class="section-content">
+
+        <img src="assets/PERNIKAHAN (6).jpg" alt="Halaman 6">
+
+    </div>
+
+</section>
+
+
+<!-- ========================= -->
+<!-- HALAMAN 7 (KONFIRMASI) -->
+<!-- ========================= -->
+
+<section class="halaman-konfirmasi">
+
+    <div class="section-content">
+
+        <img src="assets/PERNIKAHAN (7).jpg" alt="Konfirmasi">
+
+        <div class="overlay-konfirmasi">
+
+            <div class="ucapan-terima-kasih">
+
+                <h2>Terima Kasih</h2>
+
+                <p>
+                    Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
+                    Bapak/Ibu/Saudara/i berkenan hadir serta memberikan doa restu
+                    kepada kedua mempelai.
+                </p>
+
+            </div>
+
+            <div class="button-group">
+
+                <a
+                    href="https://wa.me/6285885917115?text=Assalamualaikum,%20saya%20ingin%20melakukan%20konfirmasi%20kehadiran.%0A%0ANama:%0AAlamat:%0AJumlah%20Tamu:"
+                    target="_blank"
+                    class="tombol-wa">
+
+                    💬 Konfirmasi
+
+                </a>
+
+                <a
+                    href="LINK_HADIAH"
+                    target="_blank"
+                    class="tombol-hadiah">
+
+                    🎁 Hadiah
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================= -->
+<!-- HALAMAN 8 -->
+<!-- ========================= -->
+
+<section>
+
+    <div class="section-content">
+
+        <img src="assets/PERNIKAHAN (8).jpg" alt="Penutup">
+
+    </div>
+
+</section>
+
+</div>
+
+<!-- ========================= -->
+<!-- TOMBOL MUSIK -->
+<!-- ========================= -->
+
+<button id="musicButton" onclick="playPauseMusic()">
+    🎵
+</button>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
